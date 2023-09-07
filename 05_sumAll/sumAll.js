@@ -1,13 +1,27 @@
 const sumAll = function(start, finish) {
-    let sum;
-    let range = [];
-    for (let i = start; i <= finish; i++) {
-        range += start + 1;
-    }
-    return range;
-};
+    let sum = 0;
+    let finalArr = [];
 
-console.log(sumAll(1, 3));
+    if (start < 0 || finish < 0) {
+        return "ERROR";
+    } else if (start > finish) {
+        for (let i = finish; i <= start; i++) {
+            finalArr.push(i);
+        }
+        for (let i = 0; i < finalArr.length; i++) {
+            sum += finalArr[i];
+        }
+    } else {
+        for (let i = start; i <= finish; i++) {
+            finalArr.push(i);
+        }
+        for (let i = 0; i < finalArr.length; i++) {
+            sum += finalArr[i];
+        }
+    }
+
+    return sum;
+};
 
 // Do not edit below this line
 module.exports = sumAll;
