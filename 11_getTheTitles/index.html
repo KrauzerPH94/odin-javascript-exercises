@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #404040;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const getTheTitles = function (books) {
+            return books.map(item => item.title);
+        }
+
+        const books = [
+            {
+                title: 'Book',
+                author: 'Name'
+            },
+            {
+                title: 'Book2',
+                author: 'Name2'
+            }
+        ]
+
+        console.log(getTheTitles(books));
+    </script>
+</body>
+
+</html>
