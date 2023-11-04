@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #404040;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function findTheOldest(arr) {
+            return arr.sort(function (a, b) {
+                return (a.yearOfDeath - a.yearOfBirth) - (b.yearOfDeath - b.yearOfBirth);
+            })[arr.length - 1];
+        }
+
+        const people = [
+            {
+                name: "Carly",
+                yearOfBirth: 1066,
+            },
+            {
+                name: "Ray",
+                yearOfBirth: 1962,
+                yearOfDeath: 2011,
+            },
+            {
+                name: "Jane",
+                yearOfBirth: 1912,
+                yearOfDeath: 1941,
+            },
+        ]
+
+        console.log(findTheOldest(people));
+    </script>
+</body>
+
+</html>
