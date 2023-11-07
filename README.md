@@ -1,5 +1,7 @@
 # JavaScript Exercises
 
+* Course: [The Odin Project - Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations)
+
 These JavaScript exercises are intended to complement the JavaScript content on The Odin Project (TOP). They should only be done when instructed during the course of the curriculum.
 
 **Note:** The `generator-exercise` file is not actually an exercise; it is a script that generates exercises. It was created to help efficiently write these exercises.
